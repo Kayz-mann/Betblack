@@ -17,7 +17,9 @@ export default function LoadProgress() {
 
   return (
     <Stack spacing={2} direction="row">
-      <CircularProgress color="success" variant="determinate" value={90} />
+      <CircularProgress color="success" variant="determinate" value={90}>
+        <p value={90} style={{ color: '#fff' }}>90</p>
+      </CircularProgress>
     </Stack>
   );
 }

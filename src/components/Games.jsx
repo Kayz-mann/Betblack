@@ -46,12 +46,18 @@ const GameIcons = styled.span`
 `;
 
 const Button = styled.button`
-    padding: 8px;
+    padding: 12px;
     background-color: #00994A;
     color: #fff;
     text-transform: uppercase;
     border-radius: 8px;
     margin-top: 30px;
+    border: none;
+    font-weight: 700;
+`;
+
+const ML = styled.span`
+    margin-left: 16px;
 `;
 
 
@@ -63,7 +69,9 @@ function Games() {
             <GameFlex>
             <LoadProgress />
             <RatingsFlex>
+             <ML>
             <GameRatings />
+             </ML>
             <h1 style={{ color: '#fff', marginLeft: '20px', fontSize: '14px' }}>Game Ratings</h1>
             </RatingsFlex>
             </GameFlex>

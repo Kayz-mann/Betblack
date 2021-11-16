@@ -36,12 +36,17 @@ const GradientText = styled.h1`
      color: linear-gradient(90deg, rgba(207,148,243,1) 0%, rgba(160,236,253,1) 41%);
 `;
 
+const SmallText = styled.span`
+     color:rgb(207,148,243);
+     color: linear-gradient(90deg, rgba(207,148,243,1) 0%, rgba(160,236,253,1) 41%);
+`;
+
 function Roadmap() {
     return (
         <RoadmapLayout>
             <RoadmapPositioning>
             <span>
-            <img src={roadmaplogo} alt="betblack/roadmap" />
+            <img src={roadmaplogo} style={{ marginTop: '80px' }} alt="betblack/roadmap" />
             </span>
             <ML>
             <NegativeMT>BetBlack</NegativeMT>
@@ -55,7 +60,7 @@ function Roadmap() {
                 <br />
                 give you everything you'll need to run your games on Betblack.
             </TextMT>
-            <TextMT><span>Enter the next generation of internet economies:</span>BetBlack has an
+            <TextMT><SmallText>Enter the next generation of internet economies:</SmallText> BetBlack has an
                 <br />
                 authentic purpose for online gamers. Play games,build games,earn
                 <br />

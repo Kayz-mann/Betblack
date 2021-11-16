@@ -10,9 +10,9 @@ function CoverflowImage() {
         <StyleRoot>
         <Coverflow
           displayQuantityOfSide={2}
-          navigation
+          navigation={false}
           infiniteScroll
-          enableHeading
+          enableHeading={false}
           media={{
             '@media (max-width: 900px)': {
               width: '600px',
