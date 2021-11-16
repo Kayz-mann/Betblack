@@ -48,7 +48,7 @@ const ButtonFlex = styled.div`
 const Button = styled.button`
      color: #fff;
      background-color: #0f1016;
-     padding: 8px;
+     padding: 18px;
      border-radius: 18px;
      margin: 60px;
      border: none;
