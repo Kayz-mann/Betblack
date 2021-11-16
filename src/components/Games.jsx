@@ -6,6 +6,8 @@ import LoadProgress from './Games/LoadProgess';
 import android from '../svg/android.svg';
 import apple from '../svg/apple.svg';
 import otherplatform from '../svg/otherplatform.svg';
+import firstgame from '../svg/firstgame.svg';
+import secgame from '../svg/secgame.svg';
 
 const GamesLayout = styled.div `
    display: flex;
@@ -60,11 +62,34 @@ const ML = styled.span`
     margin-left: 16px;
 `;
 
+const MT = styled.span`
+    margin-top: 300px;
+`;
+
+const Blur = styled.span`
+     display: flex;
+     justify-content: space-between;
+     position: absolute;
+     z-index: 0;
+     margin-top: -150px;
+     height: 10px;
+     width: 100%;
+     
+`;
+
 
 
 function Games() {
     return (
         <GamesLayout>
+            <Blur>
+                <span>
+                <img src={firstgame} alt="/" />
+                </span>
+                <MT>
+                <img src={secgame} alt="/" />
+                </MT>
+            </Blur>
             <Game>
             <GameFlex>
             <LoadProgress />

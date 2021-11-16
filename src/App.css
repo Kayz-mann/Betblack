@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+html,
+body {
+  font-family: "Ubuntu";
+}
 .background-image {
-    background-image: url('./svg/homebg.svg');
-    height: 100vh;
-    /* width: 100%; */
-    object-fit: contain;
+  background-image: url("./svg/homebg.svg");
+  height: 100vh;
+  /* width: 100%; */
+  object-fit: contain;
 }
 
 .roadmapbg {

@@ -19,7 +19,7 @@ function Footer() {
             <p>Decentralized with Hubs in India , Lagos the Sun,<br />
                the Moon and the Sky.
             </p>
-            <p>2021 BetBlack Private Ltd. All rights reserved.</p>
+            <p>©2021 BetBlack Private Ltd. All rights reserved.</p>
         </FooterLayout>
     )
 }
