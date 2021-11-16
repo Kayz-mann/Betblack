@@ -1,0 +1,23 @@
+.background-image {
+    background-image: url('./svg/homebg.svg');
+    height: 100vh;
+    /* width: 100%; */
+    object-fit: contain;
+}
+
+.roadmapbg {
+  background-color: #000;
+  height: 140vh;
+  /* width: 100%; */
+  object-fit: contain;
+}
+
+.gamesbg {
+  background-color: #000;
+  height: 100vh;
+  object-fit: contain;
+}
+
+/* .contactbg {
+
+} */
