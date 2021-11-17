@@ -17,7 +17,7 @@ function CoverflowImage() {
             '@media (max-width: 900px)': {
               width: '600px',
               height: '200px',
-              backgroundColor: 'black',
+              backgroundColor: 'transparent',
             },
             '@media (min-width: 900px)': {
               width: '960px',

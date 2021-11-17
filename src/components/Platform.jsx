@@ -3,25 +3,29 @@ import styled from 'styled-components';
 import platformlogo from '../svg/platformlogo.svg';
 import firstplatform from '../svg/firstplatform.svg';
 import secplatform from '../svg/secplatform.svg';
+import '../App.css'
 
 
 const PlatformLayout = styled.div`
    justify-content: center;
    text-align: center;
-   margin-top: 20px;
+   padding-top: 20px;
    align-items: center;
    flex: 1;
    display: flex;
    flex-direction: column;
    z-index: 1;
+   padding-bottom: 150px;
 
-  @media (max-width: 768px) {
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-     
-   }
-   
+   @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: -50px;
+    
+  }
+
+  
 `;
 
 const GradientText = styled.h1`
@@ -29,6 +33,15 @@ const GradientText = styled.h1`
      color: linear-gradient(90deg, rgba(207,148,243,1) 0%, rgba(160,236,253,1) 41%);
      style: normal;
      font-size: 70px;
+
+     @media (max-width: 1024px) {
+       font-size: 55px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 35px;
+      
+    }
 `;
 
 const SubGradientText = styled.h1`
@@ -37,9 +50,18 @@ const SubGradientText = styled.h1`
      style: normal;
      font-size: 25px;
      marin-top: -20px;
+
+     @media (max-width: 1024px) {
+        font-size: 25px;
+     }
+
+     @media (max-width: 768px) {
+        font-size: 15px;
+      
+    }
 `;
 
-const SmallGradient = styled.h3`
+const SmallGradient = styled.button`
      color:rgb(207,148,243);
      color: linear-gradient(90deg, rgba(207,148,243,1) 0%, rgba(160,236,253,1) 41%);
      style: normal;
@@ -51,6 +73,13 @@ const SmallGradient = styled.h3`
      flex: 0;
      justify-content: center;
      text-align: center;
+     border : none;
+
+     @media (max-width: 768px) {
+        font-size: 15px;
+        margin-top: 20px;
+      
+    }
 `;
 
 const Blur = styled.span`
@@ -61,8 +90,14 @@ const Blur = styled.span`
      margin-top: 150px;
      height: 10px;
      width: 100%;
+
+     @media (max-width: 1024px) {
+       justify-content: center;
+       
+     }
      
 `;
+
 
 function Platform() {
     return (
@@ -76,7 +111,7 @@ function Platform() {
                 <img src={firstplatform} alt="/" />
                 </span>
             </Blur>
-            <img src={platformlogo} alt="betblack" />
+            <img className="platformlogo" src={platformlogo} alt="betblack" />
             <GradientText>Next-Gen gaming for everyone</GradientText>
             <SubGradientText>We are building a new dimension where gaming is fun, accessible<br /> and for the benefit of all participants</SubGradientText>
             <SmallGradient>Get an early invite</SmallGradient>

@@ -9,9 +9,13 @@ const ContactLayout = styled.div`
     align-items: center;
     text-align: center;
     background-color: #000;
-    height: 50vh;
     object-fit: contain;
     margin-top: -20px;
+    padding-bottom: 150px;
+
+    
+
+   
 `;
 
 
@@ -27,6 +31,12 @@ const GradientText = styled.h1`
      font-size: 50px;
      padding-top: 40px;
      margin-bottom 80px;
+
+     @media (max-width: 768px) {
+        font-size: 30px;
+     }
+
+     
 `;
 
 const SecondLayout = styled.div`
@@ -34,14 +44,21 @@ const SecondLayout = styled.div`
     align-items: center;
     text-align: center;
     background: #02050c;
-    height: 50vh;
     object-fit: contain;
     margin-top: -40px;
+    padding-bottom: 150px;
 `;
 
 const ButtonFlex = styled.div`
     display: flex;
     justify-content: center;
+    
+`;
+
+const Image = styled.div`
+@media (max-width: 420px) {
+    height: 10px;
+ }
     
 `;
 
@@ -54,6 +71,11 @@ const Button = styled.button`
      border: none;
      font-size: 22px;
      cursor: pointer;
+
+     @media (max-width: 420px) {
+        font-size: 10px;
+        
+     }
 `;
 
 function Contact() {
@@ -62,9 +84,11 @@ function Contact() {
         <ContactLayout>
             <ContactTitle>Contact</ContactTitle>
             <GradientText>Join our community</GradientText>
+            <Image>
             <img src={discord} style={{ cursor: 'pointer' }} alt="/" />
             <img src={twitter} style={{ marginLeft: '80px', height: '60px', cursor: 'pointer' }} alt="/" />
             <img src={medium} style={{ marginLeft: '80px', cursor: 'pointer' }} alt="/" />
+            </Image>
         </ContactLayout>
         <SecondLayout>
               <GradientText>Get in Touch</GradientText>

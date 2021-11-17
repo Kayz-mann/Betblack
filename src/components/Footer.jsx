@@ -7,8 +7,13 @@ const FooterLayout = styled.div`
      align-items: center;
      text-align: center;
      background-color: #000;
-     height: 50vh;
      color: #fff;
+     padding-bottom: 150px;
+     
+
+     @media (max-width: 1024px) {
+        padding-bottom: 650px;
+     }
     
 `;
 
