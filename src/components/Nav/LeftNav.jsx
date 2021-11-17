@@ -97,9 +97,9 @@ return (
       <Link  to="/"><h2>Portfolio</h2></Link>
       <Link  to="/"><h2>Skills</h2></Link>
       <Link to="/"><h2>Blog</h2></Link> */}
-      <MT>
+      {/* <MT>
       <img src={logo} alt="logo" />
-      </MT>
+      </MT> */}
       <RightFlex>
       <h2>Platform</h2>
       <h2>Roadmap</h2>

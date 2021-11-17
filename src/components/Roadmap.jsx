@@ -25,6 +25,11 @@ const RoadmapPositioning = styled.div `
         line-height: 10px;
         font-weight: bold;
     }
+
+    @media (max-width: 375px) {
+        padding-left: 25px;
+        font-size: 14px;
+    }
 `;
 
 const ML = styled.div `
@@ -107,6 +112,11 @@ const GradientText = styled.h1`
         
         padding-left: 100px;
      }
+
+     @media (max-width: 414px) {
+        padding-left: 80px;
+        font-size: 25px;
+    }
 `;
 
 const SmallText = styled.span`

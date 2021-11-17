@@ -9,6 +9,7 @@ const StyledBurger = styled.div`
   height: 2rem;
   position: absolute;
   
+  
   z-index: 999;
   display: none;
   cursor: pointer;
@@ -18,12 +19,13 @@ const StyledBurger = styled.div`
     justify-content: space-around;
     flex-flow: column nowrap;
     position: sticky;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-left: 20px;
     background-color: #fff;
     padding: 8px;
     border-radius: 999px;
     color: #1E133C;
+    
     
   }
 

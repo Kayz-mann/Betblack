@@ -42,6 +42,11 @@ const GradientText = styled.h1`
         font-size: 35px;
       
     }
+
+    @media (max-width: 420px) {
+        font-size: 20px;
+        
+     }
 `;
 
 const SubGradientText = styled.h1`
@@ -59,6 +64,11 @@ const SubGradientText = styled.h1`
         font-size: 15px;
       
     }
+
+    @media (max-width: 420px) {
+        font-size: 14px;
+        
+     }
 `;
 
 const SmallGradient = styled.button`
