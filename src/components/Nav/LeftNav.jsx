@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import "./LeftNav.css"
 import logo from '../../svg/logo.svg';
+
 // import { HashLink as Link } from 'react-router-hash-link';
 
 
@@ -93,19 +94,19 @@ return (
 
     <Ul open={open}>
     <Flex>
-      {/* <Link to="/"><h2>About</h2></Link>
+      {/* <Link to="/"><Link to="/">About</h2></Link>
       <Link  to="/"><h2>Portfolio</h2></Link>
       <Link  to="/"><h2>Skills</h2></Link>
       <Link to="/"><h2>Blog</h2></Link> */}
-      {/* <MT>
+      <MT>
       <img src={logo} alt="logo" />
-      </MT> */}
+      </MT>
       <RightFlex>
-      <h2>Platform</h2>
-      <h2>Roadmap</h2>
-      <h2>Games</h2>
-      <h2>Contact</h2>
-      <h2>Careers</h2>
+      <Link to="/"><h2>Platform</h2></Link>
+      <Link to="/"><h2>Roadmap</h2></Link>
+      <Link to="/"><h2>Games</h2></Link>
+      <Link to="/"><h2>Contact</h2></Link>
+      <Link to="/careers"><h2>Careers</h2></Link>
       </RightFlex>
       </Flex>
     </Ul>

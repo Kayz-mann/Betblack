@@ -1,6 +1,7 @@
 {
   "name": "betblack",
   "version": "0.1.0",
+  "homepage": "https://betblack.app/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.6.0",
