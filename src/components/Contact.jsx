@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import discord from '../svg/discord.svg';
 import twitter from '../svg/twitter.svg';
 import medium from '../svg/medium.svg';
-import { Grade } from '@mui/icons-material';
+
 const ContactLayout = styled.div`
     justify-content: center;
     align-items: center;
