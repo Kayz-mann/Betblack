@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import roadmaplogo from '../svg/roadmaplogo.svg';
+import firstplatform from '../svg/firstplatform.svg';
+import secplatform from '../svg/secplatform.svg';
 import '../App.css';
 
 const RoadmapLayout = styled.div `
@@ -99,9 +101,44 @@ const SmallText = styled.span`
      color: linear-gradient(90deg, rgba(207,148,243,1) 0%, rgba(160,236,253,1) 41%);
 `;
 
+const Blur = styled.span`
+     display: flex;
+     justify-content: space-between;
+     position: absolute;
+    
+     
+     
+     @media (max-width: 1024px) {
+       display: none;
+       
+     }
+     
+`;
+
+const FirstImage = styled.span`
+     margin-top: -100px;
+     margin-left: -0px;
+     transform: rotate(-0deg);
+     
+`;
+
+const SecondImage = styled.span`
+     margin-right: -165px;
+     transform: rotate(-0deg);
+     
+`;
+
 function Roadmap() {
     return (
         <RoadmapLayout>
+              <Blur>
+                <FirstImage>
+                <img src={secplatform} alt="/" />
+                </FirstImage>
+                <SecondImage>
+                <img src={firstplatform} alt="/" />
+                </SecondImage>
+            </Blur>
             <RoadmapPositioning>
             <Logo>
             <img src={roadmaplogo} alt="betblack/roadmap" />

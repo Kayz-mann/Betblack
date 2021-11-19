@@ -93,30 +93,29 @@ const Button = styled.button`
 `;
 
 const ML = styled.span`
-    
+    margin-left: 16px;
 `;
 
 const MT = styled.span`
-    margin-top: 300px;
+    margin-top: 250px;
+    margin-left: -80px;
     
+`;
+
+const MS = styled.span`
+   margin-top: -200px;
 `;
 
 const Blur = styled.span`
      display: flex;
      justify-content: space-between;
      position: absolute;
-     z-index: 0;
-     margin-top: -150px;
-     
-     width: 70%;
-     padding-right: -150px;
+     height: 10px;
 
-     
      @media (max-width: 1024px) {
         display: none;
-        
-      }
-     
+    }
+  
 `;
 
 const Margin = styled.span`
@@ -130,7 +129,14 @@ const Margin = styled.span`
 function Games() {
     return (
         <GamesLayout>
-           
+            <Blur>
+                <MS>
+                <img src={firstgame} alt="/" />
+                </MS>
+                <MT>
+                <img src={secgame} alt="/" />
+                </MT>
+            </Blur>
             <Game>
             <GameFlex>
             <LoadProgress />
@@ -160,14 +166,6 @@ function Games() {
             <ImageFlex>
               <CoverflowImage />
             </ImageFlex>
-            <Blur>
-                <span>
-                {/* <img src={firstgame} alt="/" /> */}
-                </span>
-                <MT>
-                {/* <img src={secgame} alt="/" /> */}
-                </MT>
-            </Blur>
         </GamesLayout>
     )
 }

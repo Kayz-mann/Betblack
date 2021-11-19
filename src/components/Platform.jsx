@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import platformlogo from '../svg/platformlogo.svg';
-import firstplatform from '../svg/firstplatform.svg';
-import secplatform from '../svg/secplatform.svg';
 import '../App.css'
 
 
@@ -92,35 +90,14 @@ const SmallGradient = styled.button`
     }
 `;
 
-const Blur = styled.span`
-     display: flex;
-     justify-content: space-between;
-     position: absolute;
-     z-index: 0;
-     margin-top: 150px;
-     height: 10px;
-     
 
-     @media (max-width: 1024px) {
-       display: none;
-       
-     }
-     
-`;
 
 
 function Platform() {
     return (
         <>
         <PlatformLayout>
-            <Blur>
-                <span>
-                {/* <img src={secplatform} alt="/" /> */}
-                </span>
-                <span>
-                {/* <img src={firstplatform} alt="/" /> */}
-                </span>
-            </Blur>
+          
             <img className="platformlogo" src={platformlogo} alt="betblack" />
             <GradientText>Next-Gen gaming for everyone</GradientText>
             <SubGradientText>We are building a new dimension where gaming is fun, accessible<br /> and for the benefit of all participants</SubGradientText>
