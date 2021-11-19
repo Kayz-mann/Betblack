@@ -112,7 +112,10 @@ const Blur = styled.span`
      padding-right: -150px;
 
      
-     
+     @media (max-width: 1024px) {
+        display: none;
+        
+      }
      
 `;
 

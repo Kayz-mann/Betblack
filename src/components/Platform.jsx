@@ -102,7 +102,7 @@ const Blur = styled.span`
      
 
      @media (max-width: 1024px) {
-       justify-content: center;
+       display: none;
        
      }
      
