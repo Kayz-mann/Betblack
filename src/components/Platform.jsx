@@ -99,7 +99,7 @@ const Blur = styled.span`
      z-index: 0;
      margin-top: 150px;
      height: 10px;
-     width: 100%;
+     
 
      @media (max-width: 1024px) {
        justify-content: center;

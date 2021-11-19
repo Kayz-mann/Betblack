@@ -12,7 +12,7 @@ const FooterLayout = styled.div`
      
 
      @media (max-width: 1024px) {
-        padding-bottom: 650px;
+        padding-top: 100px;
      }
     
 `;

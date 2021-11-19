@@ -13,29 +13,27 @@ const RoadmapLayout = styled.div `
 const RoadmapPositioning = styled.div `
      display: flex;
      justify-content: space-between;
-     padding: 50px;
-     margin: 100px;
+     
      color: #fff;
+     z-index: 1;
 
      @media (max-width: 1024px) {
         justify-content: center;
         align-items: center;
+        display: flex;
         flex-direction: column;
         text-align: center;
         line-height: 10px;
         font-weight: bold;
+        
     }
 
     @media (max-width: 375px) {
-        padding-left: 25px;
         font-size: 14px;
     }
 `;
 
-const ML = styled.div `
-   margin-left: 100px;
-   margin-right: 50px;
-`;
+
 
 const NegativeMT = styled.h1`
     padding-top: 50px;
@@ -45,78 +43,55 @@ const NegativeMT = styled.h1`
         margin-top: 100px;
     }
 
-
-    @media (max-width: 768px) {
-        z-index: 1;
-        margin-top: -550px;
-        margin-left: -280px;
-    
-    }
-
-    @media (max-width: 420px) {
-        font-size: 20px;
-        text-align: center;
-        padding-top: 500px;
-        padding-left: 100px;
-     }
 `;
 
 const TextMT = styled.p`
      margin-top: 60px;
      line-height: 40px;
      @media (max-width: 768px) {
-        margin-left: -230px;
         line-height: 50px;
     
     }
-
-    @media (max-width: 420px) {
-        
-        padding-left: 50px;
-     }
-
 `;
 
 const Margin = styled.span`
-@media (max-width: 768px) {
-    z-index: 1;
-    margin-right: 100px;
+    flex: 0.5;
+    @media (max-width: 1024px) {
+        padding: 60px;
+    
+    }
 
-}
 `;
 
 const Logo = styled.span`
-padding-right: 100px;
-@media (max-width: 768px) {
-    margin-left: 80px;
-    // display: none;
+      flex: 0.5;
 
-}
+      img{
+          margin-top: 80px;
+      }
+      
+      
+    @media (max-width: 1024px) {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        place-items: center;
+        
+    }
 
-@media (max-width: 420px) {
-    display: none;
- }
+
+    @media (max-width: 420px) {
+        img{
+            height: 200px;
+        }
+    }
 `
 
 const GradientText = styled.h1`
      color:rgb(207,148,243);
      color: linear-gradient(90deg, rgba(207,148,243,1) 0%, rgba(160,236,253,1) 41%);
 
-     @media (max-width: 768px) {
-        margin-left: -230px;
-        text-align: center;
     
-    }
-
-    @media (max-width: 420px) {
-        
-        padding-left: 100px;
-     }
-
-     @media (max-width: 414px) {
-        padding-left: 80px;
-        font-size: 25px;
-    }
 `;
 
 const SmallText = styled.span`
@@ -129,9 +104,8 @@ function Roadmap() {
         <RoadmapLayout>
             <RoadmapPositioning>
             <Logo>
-            <img src={roadmaplogo} className="roadmaplogo" style={{ marginTop: '80px', marginRight: '200px', }} alt="betblack/roadmap" />
+            <img src={roadmaplogo} alt="betblack/roadmap" />
             </Logo>
-            <ML>
             <Margin>
             <NegativeMT>BetBlack</NegativeMT>
             <TextMT>Betblack is an interesting gaming platform that offers you a chance to
@@ -151,7 +125,7 @@ function Roadmap() {
                 gand trade virtual goods in the most popular gaming community online.
             </TextMT>
             </Margin>
-            </ML>
+            
         </RoadmapPositioning>
         <GradientText>Roadmap coming soon</GradientText>
         </RoadmapLayout>

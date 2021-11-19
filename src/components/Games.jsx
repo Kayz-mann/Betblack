@@ -82,7 +82,7 @@ const GameIcons = styled.span`
 `;
 
 const Button = styled.button`
-    padding: 12px;
+    padding: 8px;
     background-color: #00994A;
     color: #fff;
     text-transform: uppercase;
@@ -93,11 +93,12 @@ const Button = styled.button`
 `;
 
 const ML = styled.span`
-    margin-left: 16px;
+    
 `;
 
 const MT = styled.span`
     margin-top: 300px;
+    
 `;
 
 const Blur = styled.span`
@@ -106,8 +107,12 @@ const Blur = styled.span`
      position: absolute;
      z-index: 0;
      margin-top: -150px;
-     height: 10px;
-     width: 100%;
+     
+     width: 70%;
+     padding-right: -150px;
+
+     
+     
      
 `;
 
@@ -122,14 +127,7 @@ const Margin = styled.span`
 function Games() {
     return (
         <GamesLayout>
-            <Blur>
-                <span>
-                <img src={firstgame} alt="/" />
-                </span>
-                <MT>
-                <img src={secgame} alt="/" />
-                </MT>
-            </Blur>
+           
             <Game>
             <GameFlex>
             <LoadProgress />
@@ -159,6 +157,14 @@ function Games() {
             <ImageFlex>
               <CoverflowImage />
             </ImageFlex>
+            <Blur>
+                <span>
+                <img src={firstgame} alt="/" />
+                </span>
+                <MT>
+                <img src={secgame} alt="/" />
+                </MT>
+            </Blur>
         </GamesLayout>
     )
 }
