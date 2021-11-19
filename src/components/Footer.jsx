@@ -9,11 +9,23 @@ const FooterLayout = styled.div`
      background-color: #000;
      color: #fff;
      padding-bottom: 150px;
+
+     p{
+         font-size: 22px;
+         font-wieght: 400px;
+     }
      
 
      @media (max-width: 1024px) {
         padding-top: 100px;
      }
+
+     @media (max-width: 420px) {
+        p{
+            font-size: 12px;
+        }
+    
+    }
     
 `;
 

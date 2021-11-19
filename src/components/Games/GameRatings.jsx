@@ -10,7 +10,7 @@ function GameRatings() {
         <ReactStars
             count={5}
             onChange={ratingChanged}
-            size={24}
+            size={30}
             isHalf={true}
             emptyIcon={<i className="far fa-star"></i>}
             halfIcon={<i className="fa fa-star-half-alt"></i>}

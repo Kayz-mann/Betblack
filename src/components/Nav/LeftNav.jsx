@@ -68,6 +68,12 @@ const RightFlex = styled.span`
    justify-content: space-between;
    align-items: center;
 
+   h2{
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 48px;
+   }
+
   @media (max-width: 768px) {
      flex-direction: column;
      align-items: center;

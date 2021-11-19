@@ -26,6 +26,7 @@ const StyledBurger = styled.div`
     
     
   }
+  
 
   div {
     width: 2.0rem;
@@ -52,18 +53,22 @@ const StyledBurger = styled.div`
   }
 `;
 
+const Spacing = styled.div`
+   padding-top: 20px;
+`;
+
 const Burger = () => {
   const [open, setOpen] = useState(false)
 
 return (
-    <>
+    <Spacing>
       <StyledBurger open={open} onClick={() => setOpen(!open)} >
         <div />
         <div />
         <div />
       </StyledBurger>
       <LeftNav open={open}/>
-    </>
+    </Spacing>
   )
 }
 
