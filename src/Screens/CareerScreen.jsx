@@ -83,6 +83,7 @@ const OptionalDescription = styled.p`
 
     @media (max-width: 1024px) {
         text-align: center;
+        font-size: 16px;
     }
 `;
 
@@ -125,6 +126,9 @@ const List = styled.ul`
     font-size: 20px;
     line-height: 40px;
     
+    @media (max-width: 1024px) {
+        font-size: 16px;
+    }
 
 `;
 

@@ -34,7 +34,7 @@ h2 {
     width: 300px;
     padding-top: 0.5rem;
     transition: transform 0.3s ease-in-out;
-    z-index: 1;
+    z-index: 2;
     opacity: 98%;
     justify-content: center;
     align-items: center;
@@ -43,21 +43,16 @@ h2 {
     h2 {
         color: #000;
     }
-    
-    
-   
-
   }
-
-  
 `;
 
 const Flex = styled.span`
    display: flex;
    justify-content: space-between;
    width: 100%;
-   margin-top: 30px;
+  //  margin-top: 30px;
    align-items: center;
+   
 
   @media (max-width: 768px) {
      flex-direction: column;
@@ -83,7 +78,8 @@ const RightFlex = styled.span`
 `;
 const MT = styled.span`
   align-items: center;
-   
+  color: #fff;
+
 `;
 
 

@@ -162,10 +162,10 @@ function Games() {
             </ImageFlex>
             <Blur>
                 <span>
-                <img src={firstgame} alt="/" />
+                {/* <img src={firstgame} alt="/" /> */}
                 </span>
                 <MT>
-                <img src={secgame} alt="/" />
+                {/* <img src={secgame} alt="/" /> */}
                 </MT>
             </Blur>
         </GamesLayout>

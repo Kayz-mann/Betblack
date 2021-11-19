@@ -115,10 +115,10 @@ function Platform() {
         <PlatformLayout>
             <Blur>
                 <span>
-                <img src={secplatform} alt="/" />
+                {/* <img src={secplatform} alt="/" /> */}
                 </span>
                 <span>
-                <img src={firstplatform} alt="/" />
+                {/* <img src={firstplatform} alt="/" /> */}
                 </span>
             </Blur>
             <img className="platformlogo" src={platformlogo} alt="betblack" />
