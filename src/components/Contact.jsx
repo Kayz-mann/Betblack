@@ -81,13 +81,7 @@ padding: px;
     }
  }
 
- @media (max-width: 375px) {
-    
-       img{
-           height: 8px;
-           
-       }
-    }
+
 
  
     
@@ -112,11 +106,7 @@ const Button = styled.button`
         
      }
 
-     @media (max-width: 385px) {
-        font-size: 8px;
-        padding: 4px;
-        
-     }
+   
 `;
 
 function Contact() {

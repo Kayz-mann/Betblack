@@ -128,6 +128,7 @@ const List = styled.ul`
     
     @media (max-width: 1024px) {
         font-size: 16px;
+        line-height: 25px;
     }
 
 `;
