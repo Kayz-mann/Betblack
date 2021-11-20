@@ -73,8 +73,8 @@ const RatingsDescription = styled.span`
     }
 
     @media (max-width: 420px) {
-       padding-left: 20px;
-       padding-right: 20px;
+       padding-left: 18px;
+       padding-right: 18px;
     }
 
    

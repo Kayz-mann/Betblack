@@ -31,14 +31,15 @@ h2 {
     top: 0;
     // left: 0;
     height: 100vh;
-    width: 300px;
+    width: 335px;
     padding-top: 0.5rem;
     transition: transform 0.3s ease-in-out;
     z-index: 2;
-    opacity: 98%;
+  
     justify-content: center;
     align-items: center;
     text-align: center;
+    
     
     h2 {
         color: #000;
@@ -96,10 +97,6 @@ return (
 
     <Ul open={open}>
     <Flex>
-      {/* <Link to="/"><Link to="/">About</h2></Link>
-      <Link  to="/"><h2>Portfolio</h2></Link>
-      <Link  to="/"><h2>Skills</h2></Link>
-      <Link to="/"><h2>Blog</h2></Link> */}
       <MT>
       <img src={logo} alt="logo" />
       </MT>

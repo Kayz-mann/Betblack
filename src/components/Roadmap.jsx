@@ -35,7 +35,7 @@ const RoadmapPositioning = styled.div `
     }
 
     @media (max-width: 375px) {
-        font-size: 14px;
+        font-size: 12px;
     }
 `;
 
@@ -53,7 +53,7 @@ const NegativeMT = styled.h1`
 `;
 
 const TextMT = styled.p`
-     margin-top: 60px;
+     margin-top: 10px;
      line-height: 40px;
      font-size: 16px;
   
@@ -65,17 +65,15 @@ const TextMT = styled.p`
     @media (max-width: 420px) {
         width: 100%;
         font-size: 12px;
-        line-height: 25px;
+        line-height: 22px;
+        font-weight: 400;
     
     }
 `;
 
 const Margin = styled.span`
-   
-    
-  
-    @media (max-width: 1024px) {
-        padding: 20px;
+   @media (max-width: 1024px) {
+        padding: 10px;
     
     }
 

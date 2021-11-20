@@ -32,15 +32,15 @@ function CoverflowImage() {
               width: '560px',
               height: '600px'
             }, 
-            // '@media (max-width: 375px)': {
-            //   width: '300px',
-            //   height: '400px',
-            //   backgroundColor: 'transparent',
-            // },
-            // '@media (min-width: 375px)': {
-            //   width: '360px',
-            //   height: '600px'
-            // }
+            '@media (max-width: 375px)': {
+              width: '300px',
+              height: '400px',
+              backgroundColor: 'transparent',
+            },
+            '@media (min-width: 375px)': {
+              width: '360px',
+              height: '600px'
+            }
           }}
         >
           <img src={poolgame} alt='Pool' data-action="/"/>
