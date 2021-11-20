@@ -22,13 +22,10 @@ const FooterLayout = styled.div`
 
      @media (max-width: 420px) {
         p{
-            font-size: 12px;
+            font-size: 15px;
         }
 
-        @media (max-width: 385x) {
-            p{
-                font-size: 5px;
-            }
+      
     
     }
     

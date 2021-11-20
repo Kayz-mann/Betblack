@@ -38,11 +38,13 @@ const PlatformLayout = styled.div`
 `;
 
 const GradientText = styled.h1`
-     font-weight: 1000;
-     color: rgba(207, 148, 254, 1.0);
-     color: -webkit-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
-     color: -moz-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
-     color: linear-gradient(to right, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+     font-weight: 700;
+     background: rgba(207, 148, 254, 1.0);
+     background: -webkit-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+     background: -moz-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+     background: linear-gradient(to right, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
      font-size: 70px;
 
      @media (max-width: 1024px) {
@@ -55,14 +57,18 @@ const GradientText = styled.h1`
     }
 
     @media (max-width: 420px) {
-        font-size: 20px;
+        // font-size: 20px;
         
      }
 `;
 
 const SubGradientText = styled.h1`
-     color: rgb(255,255,255);
-     color: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(160,236,253,1) 0%);
+background: rgba(255, 255, 255, 1.0);
+background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1.0), rgba(160, 236, 253, 1.0));
+background: -moz-linear-gradient(right, rgba(255, 255, 255, 1.0), rgba(160, 236, 253, 1.0));
+background: linear-gradient(to left, rgba(255, 255, 255, 1.0), rgba(160, 236, 253, 1.0));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
      style: normal;
      font-size: 25px;
      line-height: 28.73px;
@@ -70,16 +76,16 @@ const SubGradientText = styled.h1`
      marin-top: -10px;
 
      @media (max-width: 1024px) {
-        font-size: 25px;
+        // font-size: 25px;
      }
 
      @media (max-width: 768px) {
-        font-size: 15px;
+        // font-size: 15px;
       
     }
 
     @media (max-width: 420px) {
-        font-size: 14px;
+        // font-size: 14px;
         
      }
 `;

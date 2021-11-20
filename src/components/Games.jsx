@@ -63,8 +63,9 @@ const RatingsFlex = styled.span`
 const RatingsDescription = styled.span`
     color: #959595;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 23px;
+    flex: 0.4;
 
     @media (max-width: 1024px) {
         justify-content: center;
@@ -73,8 +74,8 @@ const RatingsDescription = styled.span`
     }
 
     @media (max-width: 420px) {
-       padding-left: 18px;
-       padding-right: 18px;
+    //    padding-left: 18px;
+    //    padding-right: 18px;
     }
 
    
@@ -154,14 +155,11 @@ const Margin = styled.span`
    h1{
        font-weight: 700;
        font-size: 32px;
-      
-       @media (max-width: 420px) {
+       
+    @media (max-width: 420px) {
         justify-content: center;
         text-align: center;
         align-items: center;
-        
-
-        
     }
 }
 
@@ -207,9 +205,9 @@ function Games() {
             <span style={{ marginLeft: '30px' }}>
             <h1>Pro Pool</h1>
             
-            <RatingsDescription>Stake & earn  real money when you play games with your <br/>
-            friends and pals. Playing with friends is easy: sign and <br />
-            you'll be able to challenge your friends straight from <br />
+            <RatingsDescription>Stake & earn  real money when you play games with<br/> your
+            friends and pals. Playing with friends is easy:<br/> sign and 
+            you'll be able to challenge your friends<br/> straight from 
             the game</RatingsDescription>
             </span>
            </Margin>

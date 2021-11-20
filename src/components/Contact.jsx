@@ -27,8 +27,12 @@ const ContactTitle = styled.h2`
 `;
 
 const GradientText = styled.h1`
-     color:rgb(207,148,243);
-     color: linear-gradient(90deg, rgba(207,148,243,1) 0%, rgba(160,236,253,1) 41%);
+    background: rgba(207, 148, 254, 1.0);
+    background: -webkit-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+    background: -moz-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+    background: linear-gradient(to right, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
      font-size: 50px;
    
      @media (max-width: 768px) {
@@ -84,7 +88,11 @@ padding: px;
 const Button = styled.button`
      color: #fff;
      background-color: #0f1016;
-     padding: 12px;
+     padding-left: 12px;
+     padding-right: 12px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     
      border-radius: 20px;
      margin: 60px;
      border: none;
@@ -97,7 +105,8 @@ const Button = styled.button`
      }
 
      @media (max-width: 385px) {
-        font-size: 6px;
+        font-size: 8px;
+        padding: 4px;
         
      }
 `;

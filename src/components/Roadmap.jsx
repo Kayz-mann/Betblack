@@ -63,9 +63,9 @@ const TextMT = styled.p`
     }
 
     @media (max-width: 420px) {
-        width: 100%;
-        font-size: 12px;
-        line-height: 22px;
+       
+        font-size: 15px;
+        line-height: 20px;
         font-weight: 400;
     
     }
@@ -73,7 +73,7 @@ const TextMT = styled.p`
 
 const Margin = styled.span`
    @media (max-width: 1024px) {
-        padding: 10px;
+        // padding: 10px;
     
     }
 
@@ -108,8 +108,12 @@ const GradientText = styled.h1`
      padding-top: 150px;
      font-weight: 700;
      font-size: 30px;
-     color:rgb(207,148,243);
-     color: linear-gradient(90deg, rgba(207,148,243,1) 0%, rgba(160,236,253,1) 41%);
+     background: rgba(207, 148, 254, 1.0);
+     background: -webkit-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+     background: -moz-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+     background: linear-gradient(to right, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 
     
 
@@ -117,8 +121,12 @@ const GradientText = styled.h1`
 `;
 
 const SmallText = styled.span`
-     color:rgb(207,148,243);
-     color: linear-gradient(90deg, rgba(207,148,243,1) 0%, rgba(160,236,253,1) 41%);
+background: rgba(207, 148, 254, 1.0);
+background: -webkit-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+background: -moz-linear-gradient(left, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+background: linear-gradient(to right, rgba(207, 148, 254, 1.0), rgba(160, 236, 253, 1.0));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 `;
 
 const Blur = styled.span`

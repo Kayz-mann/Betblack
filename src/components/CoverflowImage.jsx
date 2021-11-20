@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Coverflow from 'react-coverflow';
 import { StyleRoot } from 'radium';
 import poolgame from '../images/poolgame.png';
@@ -6,6 +6,12 @@ import firstimage from '../images/firstimage.png';
 import scrabble from '../images/scrabble.png';
 
 function CoverflowImage() {
+  const [swiper, setSwiper] = useState(null);
+
+  const slideTo = (index) => {
+    if(swiper)
+    swiper.slideTo(index)
+  }
     return (
         <StyleRoot>
         <Coverflow
@@ -13,6 +19,7 @@ function CoverflowImage() {
           navigation={false}
           infiniteScroll
           enableHeading={false}
+          active={3}
           media={{
             '@media (max-width: 900px)': {
               width: '600px',
@@ -29,7 +36,7 @@ function CoverflowImage() {
               backgroundColor: 'transparent',
             },
             '@media (min-width: 420px)': {
-              width: '560px',
+              width: '460px',
               height: '600px'
             }, 
             '@media (max-width: 375px)': {
@@ -43,9 +50,9 @@ function CoverflowImage() {
             }
           }}
         >
-          <img src={poolgame} alt='Pool' data-action="/"/>
-          <img src={firstimage} alt='Stacked' data-action="/"/>
-          <img src={scrabble} alt='Scrabble' data-action="/"/>
+          <img src={poolgame} onClick={slideTo} alt='Pool' data-action="/"/>
+          <img src={firstimage} onClick={slideTo} alt='Stacked' data-action="/"/>
+          <img src={scrabble} onClick={slideTo} alt='Scrabble' data-action="/"/>
         </Coverflow>
         </StyleRoot>
       
