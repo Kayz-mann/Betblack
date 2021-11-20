@@ -73,6 +73,11 @@ const Description = styled.p`
         padding: 0;
     }
 
+    @media (max-width: 380px) {
+        line-height: 20px;
+    }
+
+
 `;
 
 const OptionalDescription = styled.p`
@@ -114,9 +119,31 @@ const Image = styled.div`
      padding-top: 150px;
      padding-bottom: 100px;
 
-     @media (max-width: 1024px) {
-        display: none;
-       
+     img{
+         object-fit: contain;
+         height: 250px;
+     }
+
+     @media (max-width: 768px) {
+        img{
+            object-fit: contain;
+            height: 350px;
+        }
+    }
+
+    @media (max-width: 420px) {
+        img{
+            
+            height: 250px;
+        }
+    }
+
+    
+    @media (max-width: 380px) {
+        img{
+            
+            height: 230px;
+        }
     }
 `;
 
@@ -173,13 +200,13 @@ function CareerScreen() {
             <Title>What we offer</Title>
             <Description>
                 We pay competitive salaries, offer equity to every employee, and invest in everyone's personal development.<br/>
-                We're conscious about mental health, have modern vacation policies, and embrace remote work. Our team is<br/>
+                We're conscious about mental health, have modern vacation policies, and embrace remote work. Our team is
                 made of wonderful people who have built and sold successful companies, launched amazing products, and<br/>
                 have rich experience in infrastructure, architecture, blockchain, games,finance,investing,strategy,consulting<br/>
                 design,marketing. community and more.
                 <br/>
                 <br/>
-                We're looking for passionate people who align with our mission and will expand our culture ad expertise,If<br/>
+                We're looking for passionate people who align with our mission and will expand our culture ad expertise, If
                 you're looking for the chance to deliver massive impact at a fast moving startup committed to redefining the<br/>
                 Internet as we know it, we'd love to hear from you.
             </Description>
