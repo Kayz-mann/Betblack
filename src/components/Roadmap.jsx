@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import roadmaplogo from '../svg/roadmaplogo.svg';
-import firstplatform from '../svg/firstplatform.svg';
-import secplatform from '../svg/secplatform.svg';
+// import firstplatform from '../svg/firstplatform.svg';
+// import secplatform from '../svg/secplatform.svg';
 import '../App.css';
 
 const RoadmapLayout = styled.div `
