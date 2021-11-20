@@ -10,6 +10,10 @@ const RoadmapLayout = styled.div `
     place-items: center;
     padding-bottom: 200px;
     padding-top: 150px;
+
+    @media (max-width: 420px) {
+        overflow: hidden;
+    }
    
     
 `;

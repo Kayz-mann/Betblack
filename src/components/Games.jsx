@@ -16,6 +16,7 @@ const GamesLayout = styled.div `
    display: flex;
    justify-content: space-between;
    padding-bottom: 150px;
+   overflow: hidden;
    
    @media (max-width: 1024px) {
     flex-direction: column;
@@ -26,10 +27,18 @@ const GamesLayout = styled.div `
  @media (max-width: 768px) {
     text-align: center;
 }
+
+@media (max-width: 420px) {
+    overflow: hidden;
+}
 `;
 
 const ImageFlex = styled.div`
      flex: 0.5;
+
+     @media (max-width: 768px) {
+         padding-top: 100px;
+    }
 `;
 
 const GameFlex = styled.span`

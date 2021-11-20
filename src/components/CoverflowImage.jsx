@@ -25,24 +25,24 @@ function CoverflowImage() {
               width: '960px',
               height: '600px'
             }, 
-            '@media (max-width: 420px)': {
-              width: '400px',
-              height: '400px',
-              backgroundColor: 'transparent',
-            },
-            '@media (min-width: 420px)': {
-              width: '460px',
-              height: '600px'
-            }, 
-            '@media (max-width: 375px)': {
-              width: '300px',
-              height: '400px',
-              backgroundColor: 'transparent',
-            },
-            '@media (min-width: 375px)': {
-              width: '360px',
-              height: '600px'
-            }
+            // '@media (max-width: 420px)': {
+            //   width: '400px',
+            //   height: '400px',
+            //   backgroundColor: 'transparent',
+            // },
+            // '@media (min-width: 420px)': {
+            //   width: '460px',
+            //   height: '600px'
+            // }, 
+            // '@media (max-width: 375px)': {
+            //   width: '300px',
+            //   height: '400px',
+            //   backgroundColor: 'transparent',
+            // },
+            // '@media (min-width: 375px)': {
+            //   width: '360px',
+            //   height: '600px'
+            // }
           }}
         >
           <img src={poolgame}  alt='Pool' data-action="/"/>

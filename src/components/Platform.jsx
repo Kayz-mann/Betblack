@@ -31,6 +31,7 @@ const PlatformLayout = styled.div`
   @media (max-width: 420px) {
     padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
     
   }
 

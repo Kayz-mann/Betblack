@@ -56,7 +56,14 @@ const SecondLayout = styled.div`
 const ButtonFlex = styled.div`
     display: flex;
     justify-content: center;
-    padding-top: -20px;
+    
+
+    @media (max-width: 420px) {
+        
+        flex-direction: column;
+        overflow: hidden;
+        
+     }
     
 `;
 
@@ -69,6 +76,7 @@ const Image = styled.div`
 padding: px;
     img{
         height: 20px;
+        overflow: hidden;
         
     }
  }
@@ -100,7 +108,7 @@ const Button = styled.button`
      cursor: pointer;
 
      @media (max-width: 420px) {
-        font-size: 8px;
+        font-size: 14px;
         
      }
 

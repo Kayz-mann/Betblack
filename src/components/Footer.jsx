@@ -21,6 +21,7 @@ const FooterLayout = styled.div`
      }
 
      @media (max-width: 420px) {
+        overflow: hidden;
         p{
             font-size: 15px;
         }
