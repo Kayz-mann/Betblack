@@ -24,10 +24,10 @@ body {
   object-fit: contain;
 }
 
-.platformlogo {
+/* .platformlogo {
   @media (max-width: 768px) {
     height: 15px;
   }
-}
+} */
 
 

@@ -28,11 +28,9 @@ h2 {
     background-color: #fff;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-    top: 0;
-    // left: 0;
+    top: 0px;
     height: 100vh;
-    width: 335px;
-    padding-top: 0.5rem;
+    width: 100vw;
     transition: transform 0.3s ease-in-out;
     z-index: 2;
   
@@ -45,6 +43,31 @@ h2 {
         color: #000;
     }
   }
+
+  @media (max-width: 418px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+  }
+
+  @media (max-width: 380px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 89vw;
+  }
+
+  @media (max-width: 325px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 86vw;
+  }
+
+
+
+ 
 `;
 
 const Flex = styled.span`

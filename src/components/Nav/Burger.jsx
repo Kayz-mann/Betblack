@@ -17,7 +17,7 @@ const StyledBurger = styled.div`
     justify-content: space-around;
     flex-flow: column nowrap;
     position: sticky;
-    padding-top: 20px;
+    // padding-top: 20px;
     margin-left: 20px;
     background-color: #fff;
     padding: 8px;
