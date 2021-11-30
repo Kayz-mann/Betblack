@@ -81,14 +81,14 @@ const Image = styled.div`
     // width: 50%;
     
   }
-@media (max-width: 420px) {
-padding: px;
-    img{
-        height: 20px;
-        overflow: hidden;
+// @media (max-width: 420px) {
+// padding: px;
+//     img{
+//         height: 20px;
+//         overflow: hidden;
         
-    }
- }
+//     }
+//  }
 
 
 
