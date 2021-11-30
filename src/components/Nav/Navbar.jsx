@@ -2,11 +2,7 @@ import React, {useContext, useEffect, useState} from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
 import "./Navbar.css";
-import uptownlogo from "../svg/uptownlogo.svg"
-import carting from "../svg/carting.svg"
-import { Link } from 'react-router-dom';
-import { GlobalState } from '../../GlobalState';
-import LoginModal from "../mainpages/auth/LoginModal"
+
 
 
 

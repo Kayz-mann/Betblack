@@ -7,15 +7,20 @@ import careerpic from '../svg/careerpic.svg';
 const CareersLayout = styled.div`
      background-color: #000;
      pading-top: 20px;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
+    
+    
+    display: flex;
+    flex-direction: column;
+    
      
 `;
 
 const Content = styled.div`
-   
-    
+justify-content: center;
+align-items: center;
+// padding-left: 150px;
+// padding-right: 150px;
+    // width: 100%;
     justify-content: center;
     display: grid;
     place-items: center;
@@ -31,31 +36,23 @@ const Title = styled.h1`
     color: #fff;
     margin-top: 100px;
     font-size: 55px;
-    // align-items: center;
-    // justify-content: center;
-    // display: flex;
-    // flex-direction: column;
-
-    @media (max-width: 1024px) {
+    width: 70%;
+   @media (max-width: 1024px) {
         text-align: center;
         font-size: 30px;
     }
 `;
 
 const SmallTitle = styled.h1`
-color: #fff;
-padding-top: 10px;
-font-size: 20px;
-// align-items: center;
-// justify-content: center;
-// display: flex;
-// flex-direction: column;
-padding-bottom: 10px;
-
-@media (max-width: 1024px) {
-    text-align: center;
-    font-size: 15px;
-}
+    color: #fff;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    width: 65%;
+   @media (max-width: 1024px) {
+      text-align: center;
+      font-size: 15px;
+   }
 
 `;
 
@@ -63,9 +60,8 @@ const Description = styled.p`
     color: #fff;
     margin-top: 50px;
     font-size: 20px;
-    // align-items: center;
-    // justify-content: center;
-    // display: flex;
+    width: 65%;
+
 
     @media (max-width: 1024px) {
         text-align: center;
@@ -85,6 +81,7 @@ const OptionalDescription = styled.p`
     padding-top: 10px;
     padding-bottom: 40px;
     font-size: 20px;
+    width: 65%;
 
     @media (max-width: 1024px) {
         text-align: center;
@@ -121,13 +118,13 @@ const Image = styled.div`
 
      img{
          object-fit: contain;
-         height: 250px;
+         height: 650px;
      }
 
      @media (max-width: 768px) {
         img{
             object-fit: contain;
-            height: 350px;
+            height: 300px;
         }
     }
 
@@ -152,6 +149,7 @@ const List = styled.ul`
     margin-top: 5px;
     font-size: 20px;
     line-height: 40px;
+    width: 65%;
     
     @media (max-width: 1024px) {
         font-size: 16px;
@@ -165,7 +163,7 @@ function CareerScreen() {
         <CareersLayout>
             <Burger />
             <Content>
-            <Title>Join us in building the next generation <br/>of the gaming industry</Title>
+            <Title>Join us in building the next generation of the gaming industry</Title>
             <Description>BetBlack is building a new universe where the gaming industry is fun, accessible and for the benefit of all <br/>participants</Description>
             <ButtonContainer>
             <Button>See Open Positions</Button>
@@ -183,7 +181,7 @@ function CareerScreen() {
             <OptionalDescription>We are commited to living with a more free, open, equitable and inclusive internet, and a more free open,<br/>equitable and inclusive world</OptionalDescription>
             <SmallTitle>Play</SmallTitle>
             <OptionalDescription>We are commited to a world where everyone gets to play, create and express themselves freely.</OptionalDescription>
-            <Title>These are the traits we embody to realize<br/> our vision and mission:</Title>
+            <Title>These are the traits we embody to realize our vision and mission:</Title>
             <List>
                 <li>Produce world-class products and delight our community </li>
                 <li>Act like an owner, deliver impact, and collaborate </li>

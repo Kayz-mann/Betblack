@@ -160,7 +160,7 @@ const SecondImage = styled.span`
 
 function Roadmap() {
     return (
-        <RoadmapLayout>
+        <RoadmapLayout id="roadmap">
               <Blur>
                 <FirstImage>
                 {/* <img src={secplatform} alt="/" /> */}

@@ -34,9 +34,9 @@ const FooterLayout = styled.div`
 
 function Footer() {
     return (
-        <FooterLayout>
+        <FooterLayout id="footer">
             <img src={footerlogo} style={{ marginTop: '50px' }} alt="/" />
-            <p>Decentralized with Hubs in India , Lagos the Sun,<br />
+            <p>Decentralized with Hubs in India , Lagos, the Sun,<br />
                the Moon and the Sky.
             </p>
             <p>©2021 BetBlack Private Ltd. All rights reserved.</p>

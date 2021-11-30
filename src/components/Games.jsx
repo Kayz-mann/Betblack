@@ -3,9 +3,6 @@ import styled from 'styled-components';
 import CoverflowImage from './CoverflowImage';
 import GameRatings from './Games/GameRatings';
 import LoadProgress from './Games/LoadProgess';
-import android from '../svg/android.svg';
-import apple from '../svg/apple.svg';
-import otherplatform from '../svg/otherplatform.svg';
 import firstgame from '../svg/firstgame.svg';
 import secgame from '../svg/secgame.svg';
 import divider from '../svg/divider.svg';
@@ -108,20 +105,16 @@ const Game = styled.span`
     
 `;
 
-const GameIcons = styled.span`
-    display: flex;
-    margin-top: 30px;
+// const GameIcons = styled.span`
+//     display: flex;
+//     margin-top: 30px;
 
-    
-
-    
-
-     @media (max-width: 1024px) {
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-`;
+//      @media (max-width: 1024px) {
+//         justify-content: center;
+//         text-align: center;
+//         align-items: center;
+//     }
+// `;
 
 const Button = styled.button`
     padding: 8px;
@@ -189,7 +182,7 @@ padding-left: 55px;
 
 function Games() {
     return (
-        <GamesLayout>
+        <GamesLayout id="games">
             <Blur>
                 <MS>
                 <img src={firstgame} alt="/" />
@@ -222,11 +215,11 @@ function Games() {
            </Margin>
            <div></div>
             <img src={divider} alt="/divider" />
-            <GameIcons>
+            {/* <GameIcons>
                 <img  src={android} alt="/" />
                 <img style={{ marginLeft: '20px' }} src={apple} alt="/" />
                 <img style={{ marginLeft: '20px' }} src={otherplatform} alt="/" />
-            </GameIcons>
+            </GameIcons> */}
             <Button>Coming Soon</Button>
             </Game>
             <ImageFlex>
