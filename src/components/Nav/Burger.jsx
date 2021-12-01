@@ -19,7 +19,6 @@ const StyledBurger = styled.div`
     position: fixed;
     // padding-top: 20px;
     margin-left: 20px;
-    background-color: #fff;
     padding: 8px;
     border-radius: 999px;
     color: #1E133C;
@@ -31,7 +30,7 @@ const StyledBurger = styled.div`
   div {
     width: 2.0rem;
     height: 0.1rem;
-    background-color: ${({ open }) => open ? '#1E133C' : '#1E133C'};
+    background-color: ${({ open }) => open ? '#fff' : '#fff'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -57,6 +56,10 @@ const Spacing = styled.div`
    padding-top: 20px;
 `;
 
+const NavMargin = styled.div`
+   margin-left: -30px;
+`;
+
 const Burger = () => {
   const [open, setOpen] = useState(false)
 
@@ -67,7 +70,9 @@ return (
         <div />
         <div />
       </StyledBurger>
+      <NavMargin>
       <LeftNav open={open}/>
+      </NavMargin>
     </Spacing>
   )
 }

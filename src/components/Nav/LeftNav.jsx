@@ -74,6 +74,7 @@ h2 {
 const Flex = styled.span`
    display: flex;
    justify-content: space-between;
+   padding-left: 30px;
    width: 100%;
   //  margin-top: 30px;
    align-items: center;
@@ -112,6 +113,7 @@ const MT = styled.span`
   color: #fff;
   text-decoraion: none;
   list-style: none;
+  margin-left: -15px;
   img{
     height: 35px;
     // padding: 20px;
