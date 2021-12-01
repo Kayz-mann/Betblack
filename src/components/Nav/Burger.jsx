@@ -57,7 +57,7 @@ const Spacing = styled.div`
 `;
 
 const NavMargin = styled.div`
-   margin-left: -30px;
+   padding-left: -30px;
 `;
 
 const Burger = () => {

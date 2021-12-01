@@ -113,7 +113,7 @@ const MT = styled.span`
   color: #fff;
   text-decoraion: none;
   list-style: none;
-  margin-left: -15px;
+  padding-left: -15px;
   img{
     height: 35px;
     // padding: 20px;
