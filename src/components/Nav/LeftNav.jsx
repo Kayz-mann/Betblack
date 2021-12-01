@@ -74,12 +74,11 @@ h2 {
 const Flex = styled.span`
    display: flex;
    justify-content: space-between;
-   padding-left: 30px;
+   padding-left: -100px;
    width: 100%;
   //  margin-top: 30px;
    align-items: center;
    
-
   @media (max-width: 768px) {
      flex-direction: column;
      align-items: center;
