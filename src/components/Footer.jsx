@@ -12,18 +12,20 @@ const FooterLayout = styled.div`
 
      p{
          font-size: 22px;
-         font-wieght: 400px;
+         line-height: 25.28px;
+         font-wieght: normal;
      }
      
 
      @media (max-width: 1024px) {
         padding-top: 100px;
+        font-size: 14px;
      }
 
      @media (max-width: 420px) {
         overflow: hidden;
         p{
-            font-size: 15px;
+            font-size: 14px;
         }
 
       

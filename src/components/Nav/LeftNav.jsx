@@ -140,7 +140,7 @@ return (
             <Link smooth to="/#roadmap"><h2>Roadmap</h2></Link>
             <Link smooth to="/#games"><h2>Games</h2></Link>
             <Link smooth to="/#contact"><h2>Contact</h2></Link>
-            <Link smooth to="/#careers"><h2>Careers</h2></Link>
+            <Link to="/careers"><h2>Careers</h2></Link>
             </RightFlex>
           </Flex>
         ) : (
