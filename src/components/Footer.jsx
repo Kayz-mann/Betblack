@@ -27,9 +27,6 @@ const FooterLayout = styled.div`
         p{
             font-size: 14px;
         }
-
-      
-    
     }
     
 `;

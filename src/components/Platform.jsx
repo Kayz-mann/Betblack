@@ -166,7 +166,7 @@ function Platform() {
     return (
         <>
         <PlatformLayout id="platform">
-          <img className="platformlogo" src={platformlogo} alt="betblack" />
+          <img className="platformlogo" srcset={platformlogo} sizes='auto' alt="betblack" />
             <GradientText>Next-Gen Gaming for Everyone</GradientText>
             <SubGradientText>We are building a new dimension where gaming is fun, accessible<br /> and for the benefit of all participants</SubGradientText>
             <SmallGradient onClick={handleOpen}>Get an early invite</SmallGradient>
