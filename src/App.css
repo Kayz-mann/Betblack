@@ -4,7 +4,7 @@ body {
   font-family: "Ubuntu";
 }
 .background-image {
-  background-image: url("./svg/homebg.svg");
+  background-image: url("./svg/home.png.png");
   background-size: cover;
   /* height: 100vh; */
   width: 100%;
